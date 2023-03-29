@@ -27,21 +27,6 @@ public class StudentMain {
 		for(Student st : students) {
 			System.out.println(st.toString());
 		}
-		
-		System.out.println();
-		
-		
-		// 총점 및 평균 출력 메소드 사용
-		for(Student st : students)
-		{
-			float[] scores = st.returnScores(st.getStName(), st.getScoreKr(), st.getScoreEn(), st.getScoreMath());
-			
-			for(float num : scores) {
-				System.out.print(num + "\t");
-			}
-			System.out.println();
-		
-		}
 	}
 
 }

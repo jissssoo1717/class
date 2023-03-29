@@ -56,21 +56,17 @@ public class Student {
 	
 	
 	// ③ 총점과 평균을 구해 결과를 반환하는 메소드를 정의합니다.
-	float[] returnScores(String name, int scoreKr, int scoreEn, int scoreMath) {
-		
-		System.out.print(name + "의 총점과 평균 :  ");
-		
-		float[] scores = new float[2];
-		
-		scores[0] = scoreKr + scoreEn + scoreMath; // 총점
-		scores[1] = scores[0] / 3; // 평균
-		
-		return scores;
+	int getSum() {
+		return scoreKr + scoreEn + scoreMath;
+	}
+	float getAvg(int sum) {
+		return (float)getSum() / 3;
 	}
 	
 	@Override
 	public String toString() {
-		return "이름 = " + studentName + ", 국어 = " + scoreKr + ", 영어 = " + scoreEn + ", 수학 = " + scoreMath;
+		return "이름 = " + studentName + ", 국어 = " + scoreKr + ", 영어 = "
+				+ scoreEn + ", 수학 = " + scoreMath + ", 총점 = " + getSum() + ", 평균 = " + getAvg(getSum());
 	}
 
 }
