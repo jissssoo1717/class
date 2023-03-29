@@ -54,7 +54,9 @@ public class Student {
 		this.scoreMath = scoreMath;
 	}
 	
-	float[] returnScores(int scoreKr, int scoreEn, int scoreMath) {
+	float[] returnScores(String name, int scoreKr, int scoreEn, int scoreMath) {
+		
+		System.out.print(name + "의 총점과 평균 :  ");
 		
 		float[] scores = new float[2];
 		
