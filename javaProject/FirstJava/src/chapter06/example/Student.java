@@ -2,17 +2,17 @@ package chapter06.example;
 
 /*
 2. Student 클래스를 정의해봅시다.
-① 학생이름, 국어점수, 영어점수, 수학점수를 저장하는 변수를 정의 합니다.
-② 변수는 캡슐화를 합니다. getter/setter 메소드를 정의합니다.
-③ 총점과 평균을 구해 결과를 반환하는 메소드를 정의합니다.
 */
+
 public class Student {
 
+	// ① 학생이름, 국어점수, 영어점수, 수학점수를 저장하는 변수를 정의 합니다.
 	String studentName;
 	int scoreKr;
 	int scoreEn;
 	int scoreMath;
 
+	// ② 변수는 캡슐화를 합니다. getter/setter 메소드를 정의합니다.
 	// Constructor
 	Student(String studentName, int scoreKr, int scoreEn, int scoreMath) {
 		this.studentName = studentName;
@@ -54,6 +54,8 @@ public class Student {
 		this.scoreMath = scoreMath;
 	}
 	
+	
+	// ③ 총점과 평균을 구해 결과를 반환하는 메소드를 정의합니다.
 	float[] returnScores(String name, int scoreKr, int scoreEn, int scoreMath) {
 		
 		System.out.print(name + "의 총점과 평균 :  ");
