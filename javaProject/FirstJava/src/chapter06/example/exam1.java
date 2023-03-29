@@ -5,6 +5,8 @@ public class exam1 {
 
 	public static void main(String[] args) {
 
+		// String[] stName = {"국어", "영어", "수학"};
+		
 		int[][] scores = { 
 				{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, // 국어
 				{ 1, 2, 3, 2, 5, 6, 4, 8, 2, 4 },  // 영어

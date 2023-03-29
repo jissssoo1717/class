@@ -59,14 +59,14 @@ public class Student {
 	int getSum() {
 		return scoreKr + scoreEn + scoreMath;
 	}
-	float getAvg(int sum) {
-		return (float)getSum() / 3;
+	float getAvg() {
+		return getSum() / 3;
 	}
 	
 	@Override
 	public String toString() {
 		return "이름 = " + studentName + ", 국어 = " + scoreKr + ", 영어 = "
-				+ scoreEn + ", 수학 = " + scoreMath + ", 총점 = " + getSum() + ", 평균 = " + getAvg(getSum());
+				+ scoreEn + ", 수학 = " + scoreMath + ", 총점 = " + getSum() + ", 평균 = " + getAvg();
 	}
 
 }
