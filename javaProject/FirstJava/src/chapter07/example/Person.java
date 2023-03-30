@@ -27,8 +27,5 @@ public class Person {
 		System.out.println(age + "살 입니다.");
 	}
 	
-	void printPersonInfo() {
-		System.out.println("이름="+name+", 주민등록번호="+pNumber+", 나이="+age);
-	}
 
 }
