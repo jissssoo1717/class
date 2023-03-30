@@ -20,10 +20,5 @@ public class Male extends Person {
 		System.out.println("성별은 " + gender +"입니다.");
 	}
 	
-	@Override
-	void printPersonInfo() {
-		super.printPersonInfo();
-		System.out.println("1");
-	}
 	
 }
